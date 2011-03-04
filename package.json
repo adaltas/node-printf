@@ -1,0 +1,7 @@
+{ "name": "printf"
+, "version": "0.0.1"
+, "description": "Write formatted data (printf and sprintf)"
+, "author": "David Worms <david@adaltas.com>"
+, "main": "./lib/printf"
+, "engines": { "node": ">= 0.1.90" }
+}
