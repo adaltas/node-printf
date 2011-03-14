@@ -202,5 +202,8 @@ module.exports = {
 		assert.ok(error);
 
 		assert.eql("%10", printf("%10", 42));
+	},
+	'Escape': function(){
+		assert.eql("10 %", printf("%d %%", 10));
 	}
 };
