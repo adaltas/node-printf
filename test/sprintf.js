@@ -2,6 +2,9 @@ var assert = require('assert'),
 	printf = require('../lib/printf');
 
 module.exports = {
+    'Specifier: b': function(){
+        assert.eql( "1111011", printf("%b", 123)  );
+    },
 	'Flag: (space)': function(){
 		assert.eql(" 42", printf("% d", 42));
 		assert.eql("-42", printf("% d", -42));
