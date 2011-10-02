@@ -25,9 +25,9 @@ module.exports = {
 		assert.eql("42", printf("%0d", 42));
 		assert.eql("-42", printf("%0d", -42));
 		assert.eql("00042", printf("%05d", 42));
-		assert.eql("00-42", printf("%05d", -42));
+		assert.eql("-00042", printf("%05d", -42));
 		assert.eql("000000000000042", printf("%015d", 42));
-		assert.eql("000000000000-42", printf("%015d", -42));
+		assert.eql("-000000000000042", printf("%015d", -42));
 	},
 	'Flag: -': function(){
 		assert.eql("42", printf("%-d", 42));
