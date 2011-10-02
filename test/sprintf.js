@@ -206,7 +206,10 @@ module.exports = {
 
 		assert.eql("%10", printf("%10", 42));
 	},
-	'Escape': function(){
+    'Escape': function(){
 		assert.eql("10 %", printf("%d %%", 10));
+	},
+    'Output': function(){
+		assert.eql('Debug { hello: \'Node\' }', printf("Debug %O", {hello: 'Node'}));
 	}
 };

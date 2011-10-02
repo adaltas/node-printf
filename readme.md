@@ -104,6 +104,12 @@ Miscellaneous
 	assert.eql("10", printf("%d", 10));
 ```
 
+Human readable output with `util.inspect`
+
+``` javascript
+    assert.eql("Debug: { hello: 'Node' }", prinf('Debug: %O', {hello: 'Node'});
+```
+
 Installing
 ----------
 
