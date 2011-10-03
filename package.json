@@ -1,5 +1,5 @@
 { "name": "printf"
-, "version": "0.0.3"
+, "version": "0.0.4"
 , "description": "Write formatted data (printf and sprintf)"
 , "author": "David Worms <david@adaltas.com>"
 , "main": "./lib/printf"
