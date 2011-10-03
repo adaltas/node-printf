@@ -19,89 +19,89 @@ Usage
 sprintf
 
 ``` javascript
-	var printf = require('printf');
-	var string = printf(format, args...);
+    var printf = require('printf');
+    var string = printf(format, args...);
 ```
 
 printf
 
 ``` javascript
-	var printf = require('printf');
-	printf(write_stream, format, args...);
+    var printf = require('printf');
+    printf(write_stream, format, args...);
 ```
 
 Exemples
 --------
 
 ``` javascript
-	var printf = require('printf');
+    var printf = require('printf');
 ```
-	
+    
 Flag: (space)
 
 ``` javascript
-	assert.eql('  -42', printf('% 5d', -42));
+    assert.eql('  -42', printf('% 5d', -42));
 ```
 
 Flag: +
 
 ``` javascript
-	assert.eql('  +42', printf('%+5d', 42));
+    assert.eql('  +42', printf('%+5d', 42));
 ```
 
 Flag: 0
 
 ``` javascript
-	assert.eql('00042', printf('%05d', 42));
+    assert.eql('00042', printf('%05d', 42));
 ```
 
 Flag: -
 
 ``` javascript
-	assert.eql('42   ', printf('%-5d', 42));
+    assert.eql('42   ', printf('%-5d', 42));
 ```
 
 Precision
 
 ``` javascript
-	assert.eql('42.90', printf('%.2f', 42.8952));
-	assert.eql('042.90', printf('%06.2f', 42.8952));
+    assert.eql('42.90', printf('%.2f', 42.8952));
+    assert.eql('042.90', printf('%06.2f', 42.8952));
 ```
 
 Bases
 
 ``` javascript
-	assert.eql('\x7f', printf('%c', 0x7f));
+    assert.eql('\x7f', printf('%c', 0x7f));
 ```
 
 Mapping
 
 ``` javascript
-	assert.eql('Hot Pocket', printf('%1$s %2$s', 'Hot', 'Pocket'));
-	assert.eql('Hot Pocket', printf('%(temperature)s %(crevace)s', {
-		temperature: 'Hot',
-		crevace: 'Pocket'
-	}));
+    assert.eql('Hot Pocket', printf('%1$s %2$s', 'Hot', 'Pocket'));
+    assert.eql('Hot Pocket', printf('%(temperature)s %(crevace)s', {
+        temperature: 'Hot',
+        crevace: 'Pocket'
+    }));
 ```
 
 Positionals
 
 ``` javascript
-	assert.eql(' foo', printf('%*s', 'foo', 4));
-	assert.eql('      3.14', printf('%*.*f', 3.14159265, 10, 2));
-	assert.eql('0000003.14', printf('%0*.*f', 3.14159265, 10, 2));
-	assert.eql('3.14      ', printf('%-*.*f', 3.14159265, 10, 2));
+    assert.eql(' foo', printf('%*s', 'foo', 4));
+    assert.eql('      3.14', printf('%*.*f', 3.14159265, 10, 2));
+    assert.eql('0000003.14', printf('%0*.*f', 3.14159265, 10, 2));
+    assert.eql('3.14      ', printf('%-*.*f', 3.14159265, 10, 2));
 ```
 
 Miscellaneous
 
 ``` javascript
     assert.eql('+hello+', printf('+%s+', 'hello'));
-	assert.eql('+10+', printf('+%d+', 10));
-	assert.eql('a', printf('%c', 'a'));
-	assert.eql('"', printf('%c', 34));
-	assert.eql('$', printf('%c", 36));
-	assert.eql('10', printf('%d', 10));
+    assert.eql('+10+', printf('+%d+', 10));
+    assert.eql('a', printf('%c', 'a'));
+    assert.eql('"', printf('%c', 34));
+    assert.eql('$', printf('%c", 36));
+    assert.eql('10', printf('%d', 10));
 ```
 
 Human readable output with `util.inspect`
@@ -129,7 +129,7 @@ Test
 ----
 
 ```
-	expresso
+    expresso
 ```
 
 
