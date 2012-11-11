@@ -1,90 +1,133 @@
+                _       _    __ 
+               (_)     | |  / _|
+     _ __  _ __ _ _ __ | |_| |_ 
+    | '_ \| '__| | '_ \| __|  _|
+    | |_) | |  | | | | | |_| |  
+    | .__/|_|  |_|_| |_|\__|_|  
+    | |                         
+    |_| 
 
-<pre>
-            _       _    __ 
-           (_)     | |  / _|
- _ __  _ __ _ _ __ | |_| |_ 
-| '_ \| '__| | '_ \| __|  _|
-| |_) | |  | | | | | |_| |  
-| .__/|_|  |_|_| |_|\__|_|  
-| |                         
-|_| 
-</pre>
+A complete implementation of the **`printf` C functions family**
+for [Node.JS][node], written in pure JavaScript.  
+The code is strongly inspired by the one availabe in the [Dojo Toolkit][dojo].
 
-A complete implementation of `sprintf` and `printf` for Node. The code is 
-strongly inspired by the one availabe in the [Dojo Toolkit][dojo].
+**Bonus!** You get extra features, like the `%O` converter (which `inspect`s
+the argument). See [Extra Features](#extra-features) below.
 
-Usage
------
+## Installing
 
-sprintf
+Via [NPM][npm]:
+
+```bash
+$ npm install printf
+```
+
+## Usage
+
+Use it like you would in C (`printf`/`sprintf`):
 
 ``` javascript
     var printf = require('printf');
-    var string = printf(format, args...);
+    var result = printf(format, args...);
 ```
 
-printf
+It can also output the result for you, as `fprintf`:
 
 ``` javascript
     var printf = require('printf');
     printf(write_stream, format, args...);
 ```
 
-Exemples
---------
+## Features
 
 ``` javascript
     var printf = require('printf');
 ```
     
-Flag: (space)
+### Flags
+
+##### ` ` (space)
 
 ``` javascript
     assert.eql('  -42', printf('% 5d', -42));
 ```
 
-Flag: +
+##### `+` (plus)
 
 ``` javascript
     assert.eql('  +42', printf('%+5d', 42));
 ```
 
-Flag: 0
+##### `0` (zero)
 
 ``` javascript
     assert.eql('00042', printf('%05d', 42));
 ```
 
-Flag: -
+##### `-` (minus)
 
 ``` javascript
     assert.eql('42   ', printf('%-5d', 42));
 ```
 
-Precision
+### Width / precision
 
 ``` javascript
     assert.eql('42.90', printf('%.2f', 42.8952));
     assert.eql('042.90', printf('%06.2f', 42.8952));
 ```
 
-Bases
+### Numerical bases
 
 ``` javascript
     assert.eql('\x7f', printf('%c', 0x7f));
+    assert.eql('a', printf('%c', 'a'));
+    assert.eql('"', printf('%c', 34));
 ```
 
-Mapping
+### Miscellaneous
 
 ``` javascript
-    assert.eql('Hot Pocket', printf('%1$s %2$s', 'Hot', 'Pocket'));
-    assert.eql('Hot Pocket', printf('%(temperature)s %(crevace)s', {
-        temperature: 'Hot',
-        crevace: 'Pocket'
-    }));
+    assert.eql('10%', printf('%d%%', 10));
+    assert.eql('+hello+', printf('+%s+', 'hello'));
+    assert.eql('$', printf('%c", 36));
 ```
 
-Positionals
+## Extra features!
+
+### Inspector
+
+The `%O` converter will call [`util.inspect(...)`](util_inspect) at the argument:
+
+``` javascript
+    assert.eql("Debug: { hello: 'Node' }",
+      printf('Debug: %O', {hello: 'Node'})
+    );
+    assert.eql("Test: { hello: 'Node' }",
+      printf('%2$s: %1$O', {"hello": 'Node'}, 'Test')
+    );
+```
+
+**Important:** it's a capital "O", *not* a zero!
+
+### Argument mapping
+
+In addition to the old-faishoned `n$`,  
+you can use **hashes** and **property names**!
+
+``` javascript
+    assert.eql('Hot Pockets',
+      printf('%(temperature)s %(crevace)ss', {
+        temperature: 'Hot',
+        crevace: 'Pocket'
+      })
+    );
+    assert.eql('Hot Pockets',
+      printf('%2$s %1$ss', 'Pocket', 'Hot')
+    );
+```
+
+### Positionals
 
 ``` javascript
     assert.eql(' foo', printf('%*s', 'foo', 4));
@@ -93,45 +136,17 @@ Positionals
     assert.eql('3.14      ', printf('%-*.*f', 3.14159265, 10, 2));
 ```
 
-Miscellaneous
+## Test
 
-``` javascript
-    assert.eql('+hello+', printf('+%s+', 'hello'));
-    assert.eql('+10+', printf('+%d+', 10));
-    assert.eql('a', printf('%c', 'a'));
-    assert.eql('"', printf('%c', 34));
-    assert.eql('$', printf('%c", 36));
-    assert.eql('10', printf('%d', 10));
-```
+Using [Expresso][expresso]:
 
-Human readable output with `util.inspect`
-
-``` javascript
-    assert.eql("Debug: { hello: 'Node' }", prinf('Debug: %O', {hello: 'Node'});
-```
-
-Installing
-----------
-
-Via [npm](http://github.com/isaacs/npm):
-
-```
-    $ npm install printf
-```
-
-Via git (or downloaded tarball):
-
-```
-    $ git clone http://github.com/wdavidw/node-printf.git
-```
-
-Test
-----
-
-```
+```bash
     expresso
 ```
 
 
 [dojo]: http://www.dojotoolkit.org  "The Dojo Toolkit"
-
+[node]: http://nodejs.org "The Node.JS platform"
+[npm]:  https://github.com/isaacs/npm "The Node Package Manager"
+[util_inspect]: http://nodejs.org/api/util.html#util_util_inspect_object_showhidden_depth_colors "util.inspect() documentation"
+[expresso]: http://visionmedia.github.com/expresso "The Expresso TDD"
