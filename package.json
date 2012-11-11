@@ -1,7 +1,28 @@
 { "name": "printf"
-, "version": "0.0.4"
-, "description": "Write formatted data (printf and sprintf)"
+, "version": "0.0.6"
+, "description": "Full implementation of the `printf` family in pure JS."
+, "keywords": ["printf", "formatting", "sprintf", "format", "output", "print"]
+, "homepage": "http://www.adaltas.com/projects/node-printf"
+
 , "author": "David Worms <david@adaltas.com>"
+, "maintainers": [ "David Worms <david@adaltas.com>"
+                 ]
+, "contributors": [ "David Worms <david@adaltas.com>"
+                  ]
+
 , "main": "./lib/printf"
 , "engines": { "node": ">= 0.1.90" }
+, "directories": { "lib": "./lib"
+                 , "test": "./test"
+                 , "doc": "./doc"
+                 }
+
+, "repository": { "type": "git"
+                , "url": "https://github.com/wdavidw/node-printf.git"
+                }
+, "bugs": { "url": "https://github.com/wdavidw/node-printf/issues" }
+
+, "licenses": [ { "type": "BSD",
+                  "url": "http://opensource.org/licenses/BSD-3-Clause" }
+              ]
 }
