@@ -14,6 +14,14 @@
     "test": "./test",
     "doc": "./doc"
   },
+  "scripts": {
+    "test": "make test"
+  },
+  "devDependencies": {
+    "coffee-script": "latest",
+    "should": "latest",
+    "mocha": "latest"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wdavidw/node-printf.git"
