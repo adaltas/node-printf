@@ -142,7 +142,7 @@ assert.eql('3.14      ', printf('%-*.*f', 3.14159265, 10, 2));
 
 Using [Expresso][expresso]:
 
-```bash
+``` bash
 expresso
 ```
 
