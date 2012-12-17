@@ -9,7 +9,7 @@
 
 A complete implementation of the **`printf` C functions family**
 for [Node.JS][node], written in pure JavaScript.  
-The code is strongly inspired by the one availabe in the [Dojo Toolkit][dojo].
+The code is strongly inspired by the one available in the [Dojo Toolkit][dojo].
 
 **Bonus!** You get extra features, like the `%O` converter (which `inspect`s
 the argument). See [Extra Features](#extra-features) below.
@@ -18,7 +18,7 @@ the argument). See [Extra Features](#extra-features) below.
 
 Via [NPM][npm]:
 
-```bash
+``` bash
 $ npm install printf
 ```
 
