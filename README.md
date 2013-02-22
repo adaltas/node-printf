@@ -1,3 +1,4 @@
+[![Build Status](https://secure.travis-ci.org/wdavidw/node-printf.png)](http://travis-ci.org/wdavidw/node-printf)
                 _       _    __ 
                (_)     | |  / _|
      _ __  _ __ _ _ __ | |_| |_ 
@@ -149,7 +150,6 @@ assert.eql('Hot Pockets',
   printf('%2$s %1$ss', 'Pocket', 'Hot')
 );
 ```
-[![Build Status](https://secure.travis-ci.org/wdavidw/node-printf.png)](http://travis-ci.org/wdavidw/node-printf)
 
 ### Positionals
 
