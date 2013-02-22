@@ -14,7 +14,8 @@ The code is strongly inspired by the one available in the [Dojo Toolkit][dojo].
 **Bonus!** You get extra features, like the `%O` converter (which `inspect`s
 the argument). See [Extra Features](#extra-features) below.
 
-## Installing
+Installing
+----------
 
 Via [NPM][npm]:
 
@@ -22,7 +23,8 @@ Via [NPM][npm]:
 $ npm install printf
 ```
 
-## Usage
+Usage
+-----
 
 Use it like you would in C (`printf`/`sprintf`):
 
@@ -38,7 +40,8 @@ var printf = require('printf');
 printf(write_stream, format, args...);
 ```
 
-## Features
+Features
+--------
 
 ``` javascript
 var printf = require('printf');
@@ -93,7 +96,8 @@ assert.eql('+hello+', printf('+%s+', 'hello'));
 assert.eql('$', printf('%c", 36));
 ```
 
-## Extra features!
+Extra features!
+---------------
 
 ### Inspector
 
