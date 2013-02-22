@@ -110,6 +110,25 @@ assert.eql("Test: { hello: 'Node' }",
 
 **Important:** it's a capital "O", *not* a zero!
 
+Specifying a precision lets you control the depth up to which the object is formatted:
+
+``` javascript
+assert.eql("Debug: { depth0: { depth1_: 0, depth1: [Object] } }",
+  printf('Debug: %.1O', {depth0: {depth1: {depth2: {depth3: true}}, depth1_: 0}})
+);
+```
+
+You can also use `%A` instead of `%O` to disable representation of non-enumerable properties:
+
+``` javascript
+assert.eql("With non-enumerable properties: [ 1, 2, 3, 4, 5, [length]: 5 ]",
+  printf('With non-enumerable properties: %O', [1, 2, 3, 4, 5])
+);
+assert.eql("Without non-enumerable properties: [ 1, 2, 3, 4, 5 ]",
+  printf('Without non-enumerable properties: %A', [1, 2, 3, 4, 5])
+);
+```
+
 ### Argument mapping
 
 In addition to the old-fashioned `n$`,  
