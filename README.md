@@ -157,13 +157,29 @@ assert.eql('0000003.14', printf('%0*.*f', 3.14159265, 10, 2));
 assert.eql('3.14      ', printf('%-*.*f', 3.14159265, 10, 2));
 ```
 
-## Test
+Development
+-----------
 
-Using [Expresso][expresso]:
+Tests are executed with mocha. To install it, simple run `npm install`, it will install
+mocha and its dependencies in your project "node_modules" directory.
 
-``` bash
-expresso
+To run the tests:
+```bash
+npm test
 ```
+
+To generate the JavaScript files:
+```bash
+make build
+```
+
+Contributors
+------------
+
+*   David Worms: <https://github.com/wdavidw>
+*   Aluísio Augusto Silva Gonçalves <https://github.com/AluisioASG>
+*   Xavier Mendez <https://github.com/jmendeth>
+*   LLeo <https://github.com/lleo>
 
 
 [dojo]: http://www.dojotoolkit.org  "The Dojo Toolkit"

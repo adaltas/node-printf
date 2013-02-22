@@ -6,7 +6,12 @@
   "homepage": "http://www.adaltas.com/projects/node-printf",
   "author": "David Worms <david@adaltas.com>",
   "maintainers": [ "David Worms <david@adaltas.com>"],
-  "contributors": [ "David Worms <david@adaltas.com>"],
+  "contributors": [
+    "David Worms <david@adaltas.com>",
+    "Aluísio Augusto Silva Gonçalves <aluisio@aasg.name>",
+    "Xavier Mendez <jmendeth@gmail.com>",
+    "LLeo <lleoem@gmail.com>"
+  ],
   "main": "./lib/printf",
   "engines": { "node": ">= 0.1.90" },
   "directories": {
