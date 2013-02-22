@@ -198,3 +198,4 @@ describe 'sprintf', ->
     printf("%O", test).replace(/\s+/g, ' ').should.eql "{ foo: { is: { bar: true, baz: false }, isnot: { array: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, [length]: 10 ] }, maybe: undefined } }"
     printf("%.0O", test).replace(/\s+/g, ' ').should.eql "{ foo: [Object] }"
     printf("%.2O", test).replace(/\s+/g, ' ').should.eql "{ foo: { is: { bar: true, baz: false }, isnot: { array: [Object] }, maybe: undefined } }"
+    printf("%A", test.foo.isnot.array).should.eql "[ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 ]"
