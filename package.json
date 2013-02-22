@@ -25,7 +25,8 @@
   "devDependencies": {
     "coffee-script": "latest",
     "should": "latest",
-    "mocha": "latest"
+    "mocha": "latest",
+    "semver": "latest"
   },
   "repository": {
     "type": "git",
