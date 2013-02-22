@@ -110,6 +110,15 @@ assert.eql("Test: { hello: 'Node' }",
 
 **Important:** it's a capital "O", *not* a zero!
 
+Specifying a precision lets you control the depth up to which the object is formatted:
+
+``` javascript
+assert.eql("Debug: { depth0: { depth1_: 0, depth1: [Object] } }",
+  printf('Debug: %.1O', {depth0: {depth1: {depth2: {depth3: true}}, depth1_: 0}})
+);
+```
+
+
 ### Argument mapping
 
 In addition to the old-fashioned `n$`,  
