@@ -1,4 +1,5 @@
 [![Build Status](https://secure.travis-ci.org/wdavidw/node-printf.png)](http://travis-ci.org/wdavidw/node-printf)
+
 <pre>
                 _       _    __ 
                (_)     | |  / _|
@@ -46,10 +47,6 @@ printf(write_stream, format, args...);
 
 Features
 --------
-
-``` javascript
-var printf = require('printf');
-```
     
 ### Flags
 
@@ -97,7 +94,7 @@ assert.eql('"', printf('%c', 34));
 ``` javascript
 assert.eql('10%', printf('%d%%', 10));
 assert.eql('+hello+', printf('+%s+', 'hello'));
-assert.eql('$', printf('%c", 36));
+assert.eql('$', printf('%c', 36));
 ```
 
 Extra features!
@@ -161,22 +158,24 @@ Lenght and precision can now be variable:
 ``` javascript
 assert.eql(' foo', printf('%*s', 'foo', 4));
 assert.eql('      3.14', printf('%*.*f', 3.14159265, 10, 2));
-assert.eql('0000003.14', printf('%0*.*f', 3.14159265, 10, 2));
-assert.eql('3.14      ', printf('%-*.*f', 3.14159265, 10, 2));
+assert.eql('000003.142', printf('%0*.*f', 3.14159265, 10, 3));
+assert.eql('3.1416    ', printf('%-*.*f', 3.14159265, 10, 4));
 ```
 
 Development
 -----------
 
-Tests are executed with mocha. To install it, simple run `npm install`, it will install
-mocha and its dependencies in your project "node_modules" directory.
+Tests are executed with [Mocha][mocha]. To install it, simple run `npm install`, it will install
+Mocha and its dependencies in your project's `node_modules` directory.
 
 To run the tests:
+
 ```bash
 npm test
 ```
 
 To generate the JavaScript files:
+
 ```bash
 make build
 ```
@@ -186,7 +185,7 @@ The test suite is run online with [Travis][travis] against Node.js version 0.6, 
 Contributors
 ------------
 
-*   David Worms: <https://github.com/wdavidw>
+*   David Worms <https://github.com/wdavidw>
 *   Aluísio Augusto Silva Gonçalves <https://github.com/AluisioASG>
 *   Xavier Mendez <https://github.com/jmendeth>
 *   LLeo <https://github.com/lleo>
@@ -197,3 +196,5 @@ Contributors
 [npm]:  https://github.com/isaacs/npm "The Node Package Manager"
 [util_inspect]: http://nodejs.org/api/util.html#util_util_inspect_object_showhidden_depth_colors "util.inspect() documentation"
 [expresso]: http://visionmedia.github.com/expresso "The Expresso TDD"
+[travis]: https://travisci.org "Continuous Integration system"
+[mocha]: http://visionmedia.github.io/mocha "The Mocha test framework"
