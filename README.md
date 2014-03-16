@@ -185,6 +185,7 @@ Contributors
 *   Aluísio Augusto Silva Gonçalves <https://github.com/AluisioASG>
 *   Xavier Mendez <https://github.com/jmendeth>
 *   LLeo <https://github.com/lleo>
+*   Derrell Lipman <https://github.com/derrell>
 
 
 [dojo]: http://www.dojotoolkit.org  "The Dojo Toolkit"

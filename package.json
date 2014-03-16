@@ -10,7 +10,8 @@
     "David Worms <david@adaltas.com>",
     "Aluísio Augusto Silva Gonçalves <aluisio@aasg.name>",
     "Xavier Mendez <jmendeth@gmail.com>",
-    "LLeo <lleoem@gmail.com>"
+    "LLeo <lleoem@gmail.com>",
+    "Derrell Lipman <https://github.com/derrell>"
   ],
   "main": "./lib/printf",
   "engines": { "node": ">= 0.9.0" },
