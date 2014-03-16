@@ -19,6 +19,8 @@ The code is strongly inspired by the one available in the [Dojo Toolkit][dojo].
 **Bonus!** You get extra features, like the `%O` converter (which `inspect`s
 the argument). See [Extra Features](#extra-features) below.
 
+[![NPM](https://nodei.co/npm/printf.png?stars&downloads)](https://nodei.co/npm/printf/) [![NPM](https://nodei.co/npm-dl/printf.png)](https://nodei.co/npm/printf/)
+
 Installing
 ----------
 
