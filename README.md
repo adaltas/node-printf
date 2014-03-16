@@ -165,22 +165,18 @@ assert.eql('3.1416    ', printf('%-*.*f', 3.14159265, 10, 4));
 Development
 -----------
 
-Tests are executed with [Mocha][mocha]. To install it, simple run `npm install`, it will install
+Tests are executed with [Mocha][mocha]. To use it, simple run `npm install`, it will install
 Mocha and its dependencies in your project's `node_modules` directory.
 
 To run the tests:
 
 ```bash
+npm install
 npm test
 ```
 
-To generate the JavaScript files:
-
-```bash
-make build
-```
-
-The test suite is run online with [Travis][travis] against Node.js version 0.6, 0.7, 0.8 and 0.9.
+The test suite is run online with [Travis][travis] against the versions 0.9, 0.10 and 0.11 of 
+Node.js.
 
 Contributors
 ------------
