@@ -165,8 +165,8 @@ assert.eql('3.1416    ', printf('%-*.*f', 3.14159265, 10, 4));
 Development
 -----------
 
-Tests are executed with [Mocha][mocha]. To use it, simple run `npm install`, it will install
-Mocha and its dependencies in your project's `node_modules` directory.
+Tests are written in [CoffeeScript][coffee] executed with [Mocha][mocha]. To use it, simple run `npm install`, it will install
+Mocha and its dependencies in your project's `node_modules` directory followed by `npm test`.
 
 To run the tests:
 
@@ -195,3 +195,4 @@ Contributors
 [expresso]: http://visionmedia.github.com/expresso "The Expresso TDD"
 [travis]: https://travis-ci.org "Continuous Integration system"
 [mocha]: http://visionmedia.github.io/mocha "The Mocha test framework"
+[coffee]: http://coffeescript.org/
