@@ -13,7 +13,7 @@
     "LLeo <lleoem@gmail.com>"
   ],
   "main": "./lib/printf",
-  "engines": { "node": ">= 0.1.90" },
+  "engines": { "node": ">= 0.9.0" },
   "directories": {
     "lib": "./lib",
     "test": "./test",
