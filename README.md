@@ -192,5 +192,5 @@ Contributors
 [npm]:  https://github.com/isaacs/npm "The Node Package Manager"
 [util_inspect]: http://nodejs.org/api/util.html#util_util_inspect_object_showhidden_depth_colors "util.inspect() documentation"
 [expresso]: http://visionmedia.github.com/expresso "The Expresso TDD"
-[travis]: https://travisci.org "Continuous Integration system"
+[travis]: https://travis-ci.org "Continuous Integration system"
 [mocha]: http://visionmedia.github.io/mocha "The Mocha test framework"
