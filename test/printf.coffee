@@ -199,7 +199,7 @@ describe 'sprintf', ->
           array: [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
         maybe: undefined
     printf('%.0O', test).replace(/\s+/g, ' ').should.eql '{ foo: [Object] }'
-    printf('%A', test.foo.isnot.array).should.eql '[ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 ]'
+    printf('%#O', test.foo.isnot.array).should.eql '[ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 ]'
     # Object inspect serialize object in different order when showHidden is true
     return if semver.lt process.version, 'v0.9.0'
     printf('%O', test).replace(/\s+/g, ' ').should.eql '{ foo: { is: { bar: true, baz: false }, isnot: { array: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, [length]: 10 ] }, maybe: undefined } }'
