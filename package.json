@@ -24,10 +24,10 @@
     "test": "./node_modules/.bin/mocha --compilers coffee:coffee-script/register --reporter dot"
   },
   "devDependencies": {
-    "coffee-script": "latest",
-    "should": "latest",
-    "mocha": "latest",
-    "semver": "latest"
+    "coffee-script": "1.9.3",
+    "should": "6.0.3",
+    "mocha": "2.2.5",
+    "semver": "4.3.4"
   },
   "repository": {
     "type": "git",
