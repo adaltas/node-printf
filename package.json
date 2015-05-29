@@ -34,8 +34,5 @@
     "url": "https://github.com/wdavidw/node-printf.git"
   },
   "bugs": { "url": "https://github.com/wdavidw/node-printf/issues" },
-  "licenses": [{
-    "type": "BSD",
-    "url": "http://opensource.org/licenses/BSD-3-Clause"
-  }]
+  "licenses": "BSD-3-Clause"
 }
