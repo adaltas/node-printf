@@ -1,6 +1,6 @@
 {
   "name": "printf",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Full implementation of the `printf` family in pure JS.",
   "keywords": ["printf", "formatting", "sprintf", "format", "output", "print"],
   "homepage": "http://www.adaltas.com/projects/node-printf",
