@@ -4,6 +4,7 @@
   "description": "Full implementation of the `printf` family in pure JS.",
   "keywords": ["printf", "formatting", "sprintf", "format", "output", "print"],
   "homepage": "http://www.adaltas.com/projects/node-printf",
+  "license": "BSD-3-Clause",
   "author": "David Worms <david@adaltas.com>",
   "maintainers": [ "David Worms <david@adaltas.com>"],
   "contributors": [
@@ -33,6 +34,5 @@
     "type": "git",
     "url": "https://github.com/wdavidw/node-printf.git"
   },
-  "bugs": { "url": "https://github.com/wdavidw/node-printf/issues" },
-  "licenses": "BSD-3-Clause"
+  "bugs": { "url": "https://github.com/wdavidw/node-printf/issues" }
 }
