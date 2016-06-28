@@ -1,9 +1,10 @@
 
 semver = require 'semver'
 should = require 'should'
-printf = if process.env.PRINTF_COV then require '../lib-cov/printf' else require '../lib/printf'
+printf = require '../lib/printf'
 
 describe 'sprintf', ->
+  
   it 'Specifier: b', ->
     printf('%b', 123).should.eql '1111011'
 
@@ -204,4 +205,3 @@ describe 'sprintf', ->
     return if semver.lt process.version, 'v0.9.0'
     printf('%O', test).replace(/\s+/g, ' ').should.eql '{ foo: { is: { bar: true, baz: false }, isnot: { array: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, [length]: 10 ] }, maybe: undefined } }'
     printf('%.2O', test).replace(/\s+/g, ' ').should.eql '{ foo: { is: { bar: true, baz: false }, isnot: { array: [Object] }, maybe: undefined } }'
-
