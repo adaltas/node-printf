@@ -13,7 +13,8 @@
 </pre>
 
 A complete implementation of the **`printf` C functions family**
-for [Node.JS][node], written in pure JavaScript.  
+for [Node.JS][node], written in pure JavaScript.
+
 The code is strongly inspired by the one available in the [Dojo Toolkit][dojo].
 
 **Bonus!** You get extra features, like the `%O` converter (which `inspect`s
@@ -138,7 +139,7 @@ assert.eql("Without non-enumerable properties: [ 1, 2, 3, 4, 5 ]",
 
 ### Argument mapping
 
-In addition to the old-fashioned `n$`,  
+In addition to the old-fashioned `n$`,
 you can use **hashes** and **property names**!
 
 ``` javascript
