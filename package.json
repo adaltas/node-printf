@@ -22,10 +22,9 @@
     "doc": "./doc"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --compilers coffee:coffee-script/register --reporter dot"
+    "test": "./node_modules/.bin/mocha --reporter dot"
   },
   "devDependencies": {
-    "coffee-script": "1.9.3",
     "should": "6.0.3",
     "mocha": "2.2.5",
     "semver": "4.3.4"
