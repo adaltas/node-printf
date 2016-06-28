@@ -13,7 +13,7 @@
 </pre>
 
 A complete implementation of the **`printf` C functions family**
-for [Node.JS][node], written in pure JavaScript.  
+for [Node.JS][node], written in pure JavaScript.
 The code is strongly inspired by the one available in the [Dojo Toolkit][dojo].
 
 **Bonus!** You get extra features, like the `%O` converter (which `inspect`s
@@ -49,7 +49,7 @@ printf(write_stream, format, args...);
 
 Features
 --------
-    
+
 ### Flags
 
 ##### ` ` (space)
@@ -138,7 +138,7 @@ assert.eql("Without non-enumerable properties: [ 1, 2, 3, 4, 5 ]",
 
 ### Argument mapping
 
-In addition to the old-fashioned `n$`,  
+In addition to the old-fashioned `n$`,
 you can use **hashes** and **property names**!
 
 ``` javascript
@@ -167,18 +167,12 @@ assert.eql('3.1416    ', printf('%-*.*f', 3.14159265, 10, 4));
 Development
 -----------
 
-Tests are written in [CoffeeScript][coffee] executed with [Mocha][mocha]. To use it, simple run `npm install`, it will install
-Mocha and its dependencies in your project's `node_modules` directory followed by `npm test`.
-
 To run the tests:
 
 ```bash
 npm install
 npm test
 ```
-
-The test suite is run online with [Travis][travis] against the versions 0.9, 0.10 and 0.11 of 
-Node.js.
 
 Contributors
 ------------
@@ -197,4 +191,3 @@ Contributors
 [expresso]: http://visionmedia.github.com/expresso "The Expresso TDD"
 [travis]: https://travis-ci.org "Continuous Integration system"
 [mocha]: http://visionmedia.github.io/mocha "The Mocha test framework"
-[coffee]: http://coffeescript.org/
