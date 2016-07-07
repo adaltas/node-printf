@@ -108,6 +108,12 @@ describe 'sprintf', ->
       temperature: 'Hot'
       crevace: 'Pocket'
     ).should.eql '12.0 Hot Pockets'
+    printf('nested values %(nested.foo)s %(nested.bar.baz)d',
+      nested:
+        foo: 'work'
+        bar:
+          baz: 2
+    ).should.eql 'nested values work 2'
     error = false
     try
       printf '%(foo)s', 42
