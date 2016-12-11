@@ -197,5 +197,5 @@ Contributors
 [util_inspect]: http://nodejs.org/api/util.html#util_util_inspect_object_showhidden_depth_colors "util.inspect() documentation"
 [expresso]: http://visionmedia.github.com/expresso "The Expresso TDD"
 [travis]: https://travis-ci.org "Continuous Integration system"
-[mocha]: http://visionmedia.github.io/mocha "The Mocha test framework"
+[mocha]: http://mochajs.org/ "The Mocha test framework"
 [coffee]: http://coffeescript.org/
