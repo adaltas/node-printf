@@ -1,16 +1,5 @@
 [![Build Status](https://secure.travis-ci.org/wdavidw/node-printf.png)](http://travis-ci.org/wdavidw/node-printf)
 
-<pre>
-                _       _    __ 
-               (_)     | |  / _|
-     _ __  _ __ _ _ __ | |_| |_ 
-    | '_ \| '__| | '_ \| __|  _|
-    | |_) | |  | | | | | |_| |  
-    | .__/|_|  |_|_| |_|\__|_|  
-    | |                         
-    |_| 
-
-</pre>
 
 A complete implementation of the **`printf` C functions family**
 for [Node.JS][node], written in pure JavaScript.
