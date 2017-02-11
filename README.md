@@ -1,10 +1,7 @@
 [![Build Status](https://secure.travis-ci.org/wdavidw/node-printf.png)](http://travis-ci.org/wdavidw/node-printf)
 
-
 A complete implementation of the **`printf` C functions family**
 for [Node.JS][node], written in pure JavaScript.
-
-The code is strongly inspired by the one available in the [Dojo Toolkit][dojo].
 
 **Bonus!** You get extra features, like the `%O` converter (which `inspect`s
 the argument). See [Extra Features](#extra-features) below.
@@ -37,30 +34,27 @@ var printf = require('printf');
 printf(write_stream, format, args...);
 ```
 
-Features
---------
-    
-### Flags
+## Features
 
-##### ` ` (space)
+### Flag ` ` (space)
 
 ``` javascript
 assert.eql('  -42', printf('% 5d', -42));
 ```
 
-##### `+` (plus)
+### Flag `+` (plus)
 
 ``` javascript
 assert.eql('  +42', printf('%+5d', 42));
 ```
 
-##### `0` (zero)
+### Flag `0` (zero)
 
 ``` javascript
 assert.eql('00042', printf('%05d', 42));
 ```
 
-##### `-` (minus)
+### Flag `-` (minus)
 
 ``` javascript
 assert.eql('42   ', printf('%-5d', 42));
@@ -86,7 +80,10 @@ assert.eql('"', printf('%c', 34));
 ``` javascript
 assert.eql('10%', printf('%d%%', 10));
 assert.eql('+hello+', printf('+%s+', 'hello'));
+assert.eql("a", printf("%c", "a"));
+assert.eql('"', printf("%c", 34));
 assert.eql('$', printf('%c', 36));
+assert.eql("10", printf("%d", 10));
 ```
 
 Extra features!
