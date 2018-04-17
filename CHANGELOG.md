@@ -1,7 +1,7 @@
 
 # Changelog
 
-## Trunk
+## Version 0.3.0
 
 * package: ignore lock files
 * travis: from Node.js 6 to 9
