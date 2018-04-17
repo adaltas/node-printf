@@ -1,4 +1,4 @@
-// Type definitions for printf 0.2.5
+// Type definitions for printf 0.2.5 and above
 // Project: http://www.adaltas.com/projects/node-printf
 // Definitions by: Aluísio Augusto Silva Gonçalves <https://github.com/AluisioASG>
 
