@@ -3,6 +3,7 @@
 
 ## Trunk
 
+* package: ignore lock files
 * travis: from Node.js 6 to 9
 * test: support for Node above v8.x
 * package: upgrade to CoffeeScript 2
