@@ -8,8 +8,7 @@ the argument). See [Extra Features](#extra-features) below.
 
 [![NPM](https://nodei.co/npm/printf.png?stars&downloads)](https://nodei.co/npm/printf/) [![NPM](https://nodei.co/npm-dl/printf.png)](https://nodei.co/npm/printf/)
 
-Installing
-----------
+## Installing
 
 Via [NPM][npm]:
 
@@ -17,8 +16,7 @@ Via [NPM][npm]:
 $ npm install printf
 ```
 
-Usage
------
+## Usage
 
 Use it like you would in C (`printf`/`sprintf`):
 
@@ -86,8 +84,7 @@ assert.eql('$', printf('%c', 36));
 assert.eql("10", printf("%d", 10));
 ```
 
-Extra features!
----------------
+## Extra features!
 
 ### Inspector
 
@@ -151,8 +148,7 @@ assert.eql('000003.142', printf('%0*.*f', 3.14159265, 10, 3));
 assert.eql('3.1416    ', printf('%-*.*f', 3.14159265, 10, 4));
 ```
 
-Development
------------
+## Development
 
 Tests are written in [CoffeeScript][coffee] executed with [Mocha][mocha]. To use it, simple run `npm install`, it will install
 Mocha and its dependencies in your project's `node_modules` directory followed by `npm test`.
@@ -167,14 +163,15 @@ npm test
 The test suite is run online with [Travis][travis] against the versions 0.9, 0.10 and 0.11 of 
 Node.js.
 
-Contributors
-------------
+## Contributors
 
 *   David Worms <https://github.com/wdavidw>
 *   Aluísio Augusto Silva Gonçalves <https://github.com/AluisioASG>
 *   Xavier Mendez <https://github.com/jmendeth>
 *   LLeo <https://github.com/lleo>
 *   Derrell Lipman <https://github.com/derrell>
+
+This package is developed by [Adaltas](http://www.adaltas.com).
 
 
 [dojo]: http://www.dojotoolkit.org  "The Dojo Toolkit"

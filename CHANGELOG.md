@@ -1,6 +1,10 @@
 
 # Changelog
 
+## Trunk
+
+* readme: minor md syntax
+
 ## Version 0.3.0
 
 * package: ignore lock files
