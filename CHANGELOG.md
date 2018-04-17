@@ -3,6 +3,8 @@
 
 ## Trunk
 
+* test: support for Node above v8.x
+* package: upgrade to CoffeeScript 2
 * package: release chain automation
 * package: TypeScript definition file
 * package: move repository to adaltas
