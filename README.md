@@ -160,7 +160,7 @@ npm install
 npm test
 ```
 
-The test suite is run online with [Travis][travis] against the versions 0.9, 0.10 and 0.11 of 
+The test suite is run online with [Travis][travis] against the versions 6, 7, 8 and 9 of 
 Node.js.
 
 ## Contributors
