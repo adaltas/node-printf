@@ -3,6 +3,7 @@
 
 ## Trunk
 
+* %+O inspects with colors
 * readme: minor md syntax
 
 ## Version 0.3.0
