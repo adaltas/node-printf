@@ -1,7 +1,7 @@
 
 # Changelog
 
-## Trunk
+## Version 0.4.0
 
 * %+O inspects with colors
 * readme: minor md syntax
