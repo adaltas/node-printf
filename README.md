@@ -120,6 +120,14 @@ assert.eql("Without non-enumerable properties: [ 1, 2, 3, 4, 5 ]",
 );
 ```
 
+You can use the sign flag together with `%O` to enable colors in `util.inspect`:
+
+``` javascript
+assert.eql("With colors: { bar: \u001b[33mtrue\u001b[39m, baz: \u001b[33mfalse\u001b[39m }",
+  printf('With colors: %O', {bar: true, baz: false})
+);
+```
+
 ### Argument mapping
 
 In addition to the old-fashioned `n$`,
