@@ -1,6 +1,10 @@
 
 # Changelog
 
+## Trunk
+
+package: generate es5 version
+
 ## Version 0.4.0
 
 * %+O inspects with colors
