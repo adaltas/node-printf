@@ -1,7 +1,7 @@
 
 # Changelog
 
-## Trunk
+## Version 0.5.1
 
 package: revert es5, it doesn't make any sense
 
