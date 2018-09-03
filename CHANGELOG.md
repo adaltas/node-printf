@@ -1,7 +1,7 @@
 
 # Changelog
 
-## Trunk
+## Version 0.5.0
 
 package: generate es5 version
 
