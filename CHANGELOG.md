@@ -1,6 +1,10 @@
 
 # Changelog
 
+## Trunk
+
+package: revert es5, it doesn't make any sense
+
 ## Version 0.5.0
 
 package: generate es5 version
