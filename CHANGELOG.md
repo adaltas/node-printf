@@ -1,7 +1,7 @@
 
 # Changelog
 
-## Trunk
+## Version 0.5.2
 
 * package: use MIT license
 * ts: move types to lib
