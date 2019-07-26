@@ -24,7 +24,7 @@
     "Derrell Lipman <https://github.com/derrell>"
   ],
   "main": "./lib/printf",
-  "types": "./typings/printf.d.ts",
+  "types": "./lib/printf.d.ts",
   "engines": {
     "node": ">= 0.9.0"
   },

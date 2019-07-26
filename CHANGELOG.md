@@ -3,6 +3,8 @@
 
 ## Trunk
 
+* ts: move types to lib
+* package: remove directories and use files
 * package: update homepage
 
 ## Version 0.5.1
