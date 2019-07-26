@@ -1,13 +1,17 @@
 
 # Changelog
 
+## Trunk
+
+* package: update homepage
+
 ## Version 0.5.1
 
-package: revert es5, it doesn't make any sense
+* package: revert es5, it doesn't make any sense
 
 ## Version 0.5.0
 
-package: generate es5 version
+* package: generate es5 version
 
 ## Version 0.4.0
 

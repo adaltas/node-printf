@@ -10,7 +10,7 @@
     "output",
     "print"
   ],
-  "homepage": "http://www.adaltas.com/projects/node-printf",
+  "homepage": "https://github.com/adaltas/node-printf",
   "license": "BSD-3-Clause",
   "author": "David Worms <david@adaltas.com>",
   "maintainers": [
