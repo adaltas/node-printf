@@ -1,12 +1,10 @@
-[![Build Status](https://secure.travis-ci.org/adaltas/node-printf.png)](http://travis-ci.org/adaltas/node-printf)
+[![Build Status](https://secure.travis-ci.org/adaltas/node-printf.svg)](http://travis-ci.org/adaltas/node-printf)
 
 A complete implementation of the **`printf` C functions family**
 for [Node.JS][node], written in pure JavaScript.
 
 **Bonus!** You get extra features, like the `%O` converter (which `inspect`s
 the argument). See [Extra Features](#extra-features) below.
-
-[![NPM](https://nodei.co/npm/printf.png?stars&downloads)](https://nodei.co/npm/printf/) [![NPM](https://nodei.co/npm-dl/printf.png)](https://nodei.co/npm/printf/)
 
 ## Installing
 
@@ -158,8 +156,7 @@ assert.eql('3.1416    ', printf('%-*.*f', 3.14159265, 10, 4));
 
 ## Development
 
-Tests are written in [CoffeeScript][coffee] executed with [Mocha][mocha]. To use it, simple run `npm install`, it will install
-Mocha and its dependencies in your project's `node_modules` directory followed by `npm test`.
+Tests are written in [CoffeeScript][coffee] and are executed with [Mocha][mocha]. To use it, simple run `npm install`, it will install Mocha and its dependencies in your project's `node_modules` directory followed by `npm test`.
 
 To run the tests:
 
@@ -168,8 +165,7 @@ npm install
 npm test
 ```
 
-The test suite is run online with [Travis][travis] against the versions 6, 7, 8 and 9 of 
-Node.js.
+The test suite is run online with [Travis][travis] against the versions 6, 7, 8 and 9 of Node.js.
 
 ## Contributors
 
@@ -181,12 +177,9 @@ Node.js.
 
 This package is developed by [Adaltas](http://www.adaltas.com).
 
-
-[dojo]: http://www.dojotoolkit.org  "The Dojo Toolkit"
 [node]: http://nodejs.org "The Node.JS platform"
 [npm]:  https://github.com/isaacs/npm "The Node Package Manager"
 [util_inspect]: http://nodejs.org/api/util.html#util_util_inspect_object_showhidden_depth_colors "util.inspect() documentation"
-[expresso]: http://visionmedia.github.com/expresso "The Expresso TDD"
 [travis]: https://travis-ci.org "Continuous Integration system"
 [mocha]: http://mochajs.org/ "The Mocha test framework"
 [coffee]: http://coffeescript.org/
