@@ -3,6 +3,7 @@
 
 ## Trunk
 
+* package: use MIT license
 * ts: move types to lib
 * package: remove directories and use files
 * package: update homepage

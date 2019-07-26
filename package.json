@@ -11,7 +11,7 @@
     "print"
   ],
   "homepage": "https://github.com/adaltas/node-printf",
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "author": "David Worms <david@adaltas.com>",
   "maintainers": [
     "David Worms <david@adaltas.com>"
