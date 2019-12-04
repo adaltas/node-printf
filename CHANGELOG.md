@@ -1,6 +1,10 @@
 
 # Changelog
 
+## Trunk
+
+* package: update author url
+
 ## Version 0.5.2
 
 * package: use MIT license

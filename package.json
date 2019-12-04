@@ -12,10 +12,8 @@
   ],
   "homepage": "https://github.com/adaltas/node-printf",
   "license": "MIT",
-  "author": "David Worms <david@adaltas.com>",
-  "maintainers": [
-    "David Worms <david@adaltas.com>"
-  ],
+  "author": "David Worms <david@adaltas.com> (https://www.adaltas.com)",
+  "maintainers": [],
   "contributors": [
     "David Worms <david@adaltas.com>",
     "Aluísio Augusto Silva Gonçalves <aluisio@aasg.name>",
