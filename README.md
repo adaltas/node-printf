@@ -145,7 +145,7 @@ assert.eql('Hot Pockets',
 
 ### Positionals
 
-Lenght and precision can now be variable:
+Length and precision can now be variable:
 
 ``` javascript
 assert.eql(' foo', printf('%*s', 'foo', 4));
