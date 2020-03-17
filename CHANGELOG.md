@@ -3,6 +3,7 @@
 
 ## Trunk
 
+* string: fix maximum output length
 * package: update author url
 
 ## Version 0.5.2

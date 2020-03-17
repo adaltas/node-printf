@@ -21,6 +21,19 @@
     "LLeo <lleoem@gmail.com>",
     "Derrell Lipman <https://github.com/derrell>"
   ],
+  "coffeelintConfig": {
+    "indentation": {
+      "level": "error",
+      "value": 2
+    },
+    "line_endings": {
+      "level": "error",
+      "value": "unix"
+    },
+    "max_line_length": {
+      "level": "ignore"
+    }
+  },
   "main": "./lib/printf",
   "types": "./lib/printf.d.ts",
   "engines": {

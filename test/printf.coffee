@@ -65,6 +65,7 @@ describe 'sprintf', ->
     printf('%+6.2f', 42.8952).should.eql '+42.90'
     printf('%5.10f', 42.8952).should.eql '42.8952000000'
     printf('%1.4g', 1.06800e-10).should.eql '1.068e-10'
+    printf('%.3s', 'Hello').should.eql 'Hel' # Maximum output length
 
   it 'Bases', ->
     printf('%c', 0x7f).should.eql ''
