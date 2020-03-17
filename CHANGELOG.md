@@ -1,7 +1,7 @@
 
 # Changelog
 
-## Trunk
+## Version 0.5.3
 
 * string: fix maximum output length
 * package: update author url
