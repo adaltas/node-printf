@@ -1,6 +1,10 @@
 
 # Changelog
 
+## Trunk
+
+* errors: better error message when a key is missing
+
 ## Version 0.5.3
 
 * string: fix maximum output length
