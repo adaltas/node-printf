@@ -1,6 +1,10 @@
 
 # Changelog
 
+## Trunk
+
+* fix: security patch on DDOS vulnerability #32
+
 ## Version 0.6.0
 
 * errors: better error message when a key is missing
