@@ -1,6 +1,6 @@
 {
   "name": "printf",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Full implementation of the `printf` family in pure JS.",
   "keywords": [
     "printf",
