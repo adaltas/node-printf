@@ -1,17 +1,17 @@
 [![Build Status](https://secure.travis-ci.org/adaltas/node-printf.svg)](http://travis-ci.org/adaltas/node-printf)
 
 A complete implementation of the **`printf` C functions family**
-for [Node.JS][node], written in pure JavaScript.
+for [Node.JS](http://nodejs.org), written in pure JavaScript.
 
 **Bonus!** You get extra features, like the `%O` converter (which `inspect`s
 the argument). See [Extra Features](#extra-features) below.
 
 ## Installing
 
-Via [NPM][npm]:
+Via [NPM](https://github.com/isaacs/npm):
 
 ``` bash
-$ npm install printf
+npm install printf
 ```
 
 ## Usage
@@ -86,7 +86,7 @@ assert.eql("10", printf("%d", 10));
 
 ### Inspector
 
-The `%O` converter will call [`util.inspect(...)`][util_inspect] at the argument:
+The `%O` converter will call [`util.inspect(...)`](http://nodejs.org/api/util.html#util_util_inspect_object_showhidden_depth_colors) at the argument:
 
 ``` javascript
 assert.eql("Debug: { hello: 'Node', repeat: false }",
@@ -177,9 +177,6 @@ The test suite is run online with [Travis][travis] against the versions 6, 7, 8 
 
 The project is sponsored by [Adaltas](https://www.adaltas.com) based in Paris, France. Adaltas offers support and consulting on distributed systems, big data and open source.
 
-[node]: http://nodejs.org "The Node.JS platform"
-[npm]:  https://github.com/isaacs/npm "The Node Package Manager"
-[util_inspect]: http://nodejs.org/api/util.html#util_util_inspect_object_showhidden_depth_colors "util.inspect() documentation"
 [travis]: https://travis-ci.org "Continuous Integration system"
 [mocha]: http://mochajs.org/ "The Mocha test framework"
 [coffee]: http://coffeescript.org/
