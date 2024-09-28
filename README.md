@@ -175,7 +175,7 @@ The test suite is run online with [Travis][travis] against the versions 6, 7, 8 
 *   LLeo <https://github.com/lleo>
 *   Derrell Lipman <https://github.com/derrell>
 
-This package is developed by [Adaltas](http://www.adaltas.com).
+The project is sponsored by [Adaltas](https://www.adaltas.com) based in Paris, France. Adaltas offers support and consulting on distributed systems, big data and open source.
 
 [node]: http://nodejs.org "The Node.JS platform"
 [npm]:  https://github.com/isaacs/npm "The Node Package Manager"
